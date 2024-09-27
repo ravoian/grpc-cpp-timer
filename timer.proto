@@ -1,0 +1,14 @@
+syntax = "proto3";
+package timer;
+
+service Timer {
+    rpc SayHello (TimeRequest) returns (TimeReply) {}
+}
+
+message TimeRequest {
+    string name = 1;
+}
+
+message TimeReply {
+    string message = 1;
+}
